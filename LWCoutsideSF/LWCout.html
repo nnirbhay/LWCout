@@ -5,7 +5,24 @@
     <body>
 
         <script src="https://premiumlearningsystem-d-dev-ed.my.salesforce.com/lightning/lightning.out.js">
-
+        </script>
+        <script>
+            $Lightning.use(
+                "c:TestComponentApp_1", // name of the Lightning app
+                function () {
+                  // Callback once framework and app loaded
+                  $Lightning.createComponent(
+                    "c:codeRefrenceLwc", // top-level component of your app
+                    {}, // attributes to set on the component when created
+                    "lightningLocator", // the DOM location to insert the component
+                    function (cmp) {
+                        console.log("component load")
+                      // callback when component is created and active on the page
+                    },
+                  );
+                },
+                "https://universalcontainers.force.com/ourstores/", // Site endpoint
+              );
         </script>
     </body>
 </html>
