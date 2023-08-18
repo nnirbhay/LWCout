@@ -7,6 +7,7 @@
         <script src="https://premiumlearningsystem-d-dev-ed.my.salesforce.com/lightning/lightning.out.js">
         </script>
         <script>
+            console.log("component load");
             $Lightning.use(
                 "c:TestComponentApp_1", // name of the Lightning app
                 function () {
@@ -16,7 +17,7 @@
                     {}, // attributes to set on the component when created
                     "lightningLocator", // the DOM location to insert the component
                     function (cmp) {
-                        console.log("component load")
+                        console.log("component load");
                       // callback when component is created and active on the page
                     },
                   );
