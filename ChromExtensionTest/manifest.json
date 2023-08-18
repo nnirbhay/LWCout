@@ -1,0 +1,11 @@
+{
+    "name": "Learning Extension",
+    "version": "1.0.0",
+    "description": "This is for learning of Chrome Extension",
+    "manifest_version": 3,
+    "author": "...",
+    "action":{
+        "default_popup": "ChromExtensionTest.html",
+        "default_title": "Chrome ExtensionT learning"
+    }
+}
